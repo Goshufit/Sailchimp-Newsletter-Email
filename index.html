@@ -94,6 +94,11 @@
             font-size: 28px;
         }
 
+        h4 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 23px;
+        }
+
         .btn {
             background-color: #4a4a4a;
             color: #ffffff;
@@ -101,6 +106,43 @@
             padding: 12px 20px;
             font-weight: bold;
             border-radius: 5px;
+        }
+
+        .three-columns {
+            font-size: 0;
+            padding: 35px 0 20px;
+        }
+
+        .three-columns .column {
+            width: 100%;
+            max-width: 200px;
+            /* this will position elements right next to each other  */
+            display: inline-block;
+            /* In order to make the elements responsive in email clients and stack at a certain screen width */
+            vertical-align: top;
+        }
+
+        .three-columns .padding {
+            padding: 25px;
+        }
+
+        .three-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .two-columns.last {
+            padding: 35px 0;
+        }
+
+        .two-columns .padding {
+            padding: 20px;
+        }
+
+        .two-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+            text-align: left;
         }
 
         @media only screen and (max-width: 600px) {}
@@ -112,7 +154,7 @@
 <body>
     <!-- Center tag makes sure the email is centered in email clients -->
     <center class="wrapper">
-        <table class="main" width="100%">
+        <table class="main" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
             <!-- Border -->
             <tr>
                 <td height="8px" style="background-color: #000;"></td>
@@ -121,40 +163,41 @@
             <!-- Logo & Social Media -->
             <tr>
                 <td style="padding: 14px 0 4px">
-                    <table width="100%">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
 
                         <tr>
                             <td class="two-columns">
 
-                                <table class="column">
+                                <table class="column" border="0" cellspacing="0" cellpadding="0" role="presentation">
 
                                     <tr>
                                         <td style="padding: 0 22px 10px;">
-                                            <a href="https://github.com/Goshufit"><img src="img/logo.png" alt="logo"
+                                            <a href="https://github.com/Goshufit"><img src="https://i.ibb.co/9TNQCt5/logo.png" alt="logo"
                                                     title="https://github.com/Goshufit" width="250px"></a>
                                         </td>
                                     </tr>
 
                                 </table>
 
-                                <table class="column">
+                                <table class="column" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                    role="presentation">
 
                                     <tr>
                                         <td class="social-media">
                                             <a href="#">
-                                                <img src="img/facebook.png" alt="" class="social">
+                                                <img src="https://i.ibb.co/ZSZJcVL/facebook.png" alt="facebook" class="social">
                                             </a>
                                             <a href="#">
-                                                <img src="img/twitter.png" alt="" class="social">
+                                                <img src="https://i.ibb.co/F4JG06d/twitter.png" alt="twitter" class="social">
                                             </a>
                                             <a href="#">
-                                                <img src="img/youtube.png" alt="" class="social">
+                                                <img src="https://i.ibb.co/pxJdL3T/youtube.png" alt="youtube" class="social">
                                             </a>
                                             <a href="#">
-                                                <img src="img/linkedin.png" alt="" class="social">
+                                                <img src="https://i.ibb.co/yXT4PmY/linkedin.png" alt="linkedin" class="social">
                                             </a>
                                             <a href="#">
-                                                <img src="img/instagram.png" alt="" class="social">
+                                                <img src="https://i.ibb.co/5Gx2LMv/instagram.png" alt="instagram" class="social">
                                             </a>
                                         </td>
                                     </tr>
@@ -170,7 +213,7 @@
                             <td>
                                 <a href="https://github.com/Goshufit">
                                     <!-- Max-width styling makes the image responsive to changes of size of the screen width whatever the size of the screen the width will be 100% of it.  -->
-                                    <img src="/img/banner.jpg" alt="banner" title="banner" width="600px"
+                                    <img src="https://i.ibb.co/myLdC0g/banner.jpg" alt="banner" title="banner" width="600px"
                                         style="max-width: 100%;">
                                 </a>
                             </td>
@@ -180,7 +223,7 @@
 
                         <tr>
                             <td style="padding: 20px 15px 50px;">
-                                <table width="100%">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
 
                                     <tr>
                                         <td>
@@ -209,33 +252,96 @@
                         <!-- Three Column Section -->
                         <tr>
                             <td>
-                                <table width="100%">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
 
                                     <tr>
                                         <td class="three-columns">
 
-                                            <table class="column">
+                                            <table class="column" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0" role="presentation">
                                                 <tr>
                                                     <td class="padding">
 
-                                                        <table class="content">
+                                                        <table class="content" width="100%" border="0" cellspacing="0"
+                                                            cellpadding="0" role="presentation">
                                                             <tr>
                                                                 <td>
 
-                                                                    <a href="">
-                                                                        <img src="img/design.png" alt="" width="150px">
+                                                                    <a href="https://github.com/Goshufit">
+                                                                        <img src="https://i.ibb.co/PZ2Sr20/design.png" alt="" width="150px">
                                                                     </a>
 
 
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td>
+                                                                <td style="padding: 5px 0 10px">
                                                                     <h4>Email Design</h4>
                                                                     <p>Lorem, ipsum dolor sit amet consectetur
-                                                                        adipisicing elit. Minima laudantium atque
-                                                                        perspiciatis pariatur! Nostrum ad et culpa earum
-                                                                        recusandae! Sunt.</p>
+                                                                        adipisicing elit. Minima laudantium atque.
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="column" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0" role="presentation">
+                                                <tr>
+                                                    <td class="padding">
+
+                                                        <table class="content" width="100%" border="0" cellspacing="0"
+                                                            cellpadding="0" role="presentation">
+                                                            <tr>
+                                                                <td>
+
+                                                                    <a href="https://github.com/Goshufit">
+                                                                        <img src="https://i.ibb.co/p0PH5Rr/marketing.png" alt=""
+                                                                            width="150px">
+                                                                    </a>
+
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding: 5px 0 10px">
+                                                                    <h4>Email Marketing</h4>
+                                                                    <p>Lorem, ipsum dolor sit amet consectetur
+                                                                        adipisicing elit. Minima laudantium atque.
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="column" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0" role="presentation">
+                                                <tr>
+                                                    <td class="padding">
+
+                                                        <table class="content" width="100%" border="0" cellspacing="0"
+                                                            cellpadding="0" role="presentation">
+                                                            <tr>
+                                                                <td>
+
+                                                                    <a href="https://github.com/Goshufit">
+                                                                        <img src="https://i.ibb.co/C68TXkc/development.png" alt=""
+                                                                            width="150px">
+                                                                    </a>
+
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding: 5px 0 10px">
+                                                                    <h4>Development</h4>
+                                                                    <p>Lorem, ipsum dolor sit amet consectetur
+                                                                        adipisicing elit. Minima laudantium atque.
+                                                                    </p>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -251,9 +357,111 @@
                             </td>
                         </tr>
 
-                    </table> <!-- End Of Main Table -->
+                        <!-- Border -->
+
+                        <tr>
+                            <td height="2px" style="background-color: #000;"></td>
+                        </tr>
+
+                        <!-- Two Column Section -->
+
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+
+                                    <tr>
+                                        <td class="two-columns last">
+
+                                            <table class="column" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0" role="presentation">
+                                                <tr>
+                                                    <td class="padding">
+
+                                                        <table class="content">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="">
+                                                                        <img src="https://i.ibb.co/C0nTJVM/palette.png" alt="" width="250px">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="column" width="100%" border="0" cellspacing="0"
+                                                cellpadding="0" role="presentation">
+                                                <tr>
+                                                    <td class="padding">
+
+                                                        <table class="content" width="100%" border="0" cellspacing="0"
+                                                            cellpadding="0" role="presentation">
+                                                            <tr>
+                                                                <td>
+                                                                    <h4>Create Custom Designs</h4>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit. Omnis error possimus nulla
+                                                                        dolores ducimus optio!</p>
+                                                                    <p style="padding-bottom: 15px">Lorem ipsum dolor
+                                                                        sit amet consectetur
+                                                                        adipisicing elit. Doloremque, optio.</p>
+                                                                    <a href="" class="btn">Start Campaign Today!</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                    
+
+                    </table> 
                 </td>
             </tr>
-        </table>
+                <!-- Footer -->
+
+                <tr>
+                    <td style="background-color: #2b2e33; color: #ffffff;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+
+                            <tr>
+                                <td style="padding: 45px 20px;">
+                                    <a href="">
+                                        <img src="https://i.ibb.co/Pjfmbc1/logo1.png" alt="logo" width="260px">
+                                    </a>
+                                    <p style="padding: 5px;">SailChimp Next Level Emails</p>
+                                    <p style="padding: 5px;">777 Email Dev Road, DevYork City, State 77777</p>
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/ZSZJcVL/facebook.png" alt="facebook" class="social">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/F4JG06d/twitter.png" alt="twitter" class="social">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/pxJdL3T/youtube.png" alt="youtube" class="social">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/yXT4PmY/linkedin.png" alt="linkedin" class="social">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/5Gx2LMv/instagram.png" alt="instagram" class="social">
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td height="10px" style="background-color: #000;"></td>
+                </tr>
+        </table><!-- End Of Main Table -->
     </center>
 </body>
